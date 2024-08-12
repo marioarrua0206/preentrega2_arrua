@@ -1,0 +1,200 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.destacado {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 80%;
+    color: #2e2e2e;
+    text-overflow: ellipsis;
+   
+    
+}
+
+.tit-seccion{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: #e4eeff;
+    vertical-align: top;
+    
+}
+
+.contenido1{
+    background-color: darkred;
+    width: 100%;
+    height: 50%;             
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(69, 115, 196);
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #7b7b7b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #4573c4;
+}
+
+p {
+    font-size: 1rem;
+    color: #2e2e2e;
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* Estilos body */
+
+body {
+    height: 150vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    
+
+
+}
+
+
+
+/* Estilos header */
+header {
+    width: 100%;
+    height: 8%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+div {
+    width: 25%;
+    height: 100%;
+    align-content: center;
+    float: left;
+}
+
+nav {
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+nav ul {
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    float: right;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    border: 2px solid #6ea3ff;
+    width: 15%;
+    border-radius: 8px;
+    background-color: #4573c4;
+    font-size: 1rem;
+    padding: 4px;
+    margin: 4px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+
+/* Estilos main */
+
+main {
+    width: 100%;
+    height: 82%;    
+    display: inline-block;   
+    position: relative;
+    background-color: #ffffff;
+    
+
+    }
+    
+   
+   
+#miweb {
+    width: 25%;
+    height: 44.8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #afafaf;
+    display: inline;
+    
+    float: left;
+    text-align: center;
+    align-content: center;
+    margin-bottom: %;
+    
+    
+
+}
+
+
+#gap {
+    width: 12.5%;
+    height: 45%;    
+    background-color: rgb(255, 255, 255); 
+    display: inline;
+    font-size: 2rem;
+    float: left;
+    text-align: center;
+   
+
+    }
+
+
+
+
+
+
+
+
+
+
+/* Estilos footer */
+footer {
+    width: 100%;
+    height: 10%;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#foot {
+
+    width: 40%;
+    height: 100%;
+    padding-left: 10%;
+    align-content: center;
+
+}
+
+#copy {
+
+    height: 100%;
+    align-content: center;
+}

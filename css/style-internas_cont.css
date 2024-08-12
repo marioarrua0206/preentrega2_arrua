@@ -1,0 +1,193 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tit-seccion {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: #e4eeff;
+    vertical-align: top;
+    
+
+}
+
+.fieldset {
+    width: 150%;
+    height: 10%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+
+
+}
+
+.legend {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.btn {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #4573c4;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4573c4;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #7b7b7b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #4573c4;
+}
+
+p {
+    font-size: 1rem;
+    color: #2e2e2e;
+}
+
+/* Estilos body */
+
+body {
+    height: 150vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+/* Estilos header */
+header {
+    width: 100%;
+    height: 8%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+div {
+    width: 25%;
+    height: 100%;
+    align-content: center;
+    float: left;
+}
+
+nav {
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+nav ul {
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    float: right;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    border: 2px solid #6ea3ff;
+    width: 15%;
+    border-radius: 8px;
+    background-color: #4573c4;
+    font-size: 1rem;
+    padding: 4px;
+    margin: 4px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* Estilos main */
+
+main {
+    width: 100%;
+    height: 92%;
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    background-color: #ecf3fd;
+    
+
+}
+
+
+#container {
+    height: 50%;
+    display: inline;
+    float: left;
+    padding-left: 50px;
+    
+    
+}
+
+#img{
+    width: 50%;
+    display: inline-block;
+    float: right;
+    
+    
+    
+}
+
+
+/* Estilos footer */
+footer {
+    width: 100%;
+    height: 10%;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#foot {
+
+    width: 40%;
+    height: 100%;
+    padding-left: 10%;
+    align-content: center;
+
+}
+
+#copy {
+
+    height: 100%;
+    align-content: center;
+}

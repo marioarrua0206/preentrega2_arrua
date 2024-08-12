@@ -1,0 +1,232 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.destacado {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 80%;
+    color: #ffffff;
+    margin-top: 10px;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: rgb(69, 115, 196);
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ffe4b2;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #4573c4;
+}
+
+p {
+    font-size: 1rem;
+    color: #2e2e2e;
+}
+
+/* Estilos body */
+
+body {
+    height: 150vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+/* Estilos header */
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8%;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 2;
+
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+nav ul li {
+    
+    border: 2px solid #6ea3ff;
+    width: 15%;
+    border-radius: 8px;
+    background-color: #4573c4;
+    font-size: 1rem;
+    padding: 4px;
+    margin: 4px;
+    list-style-type: none;
+   
+
+
+}
+li:hover{
+background-color: #3a7ef4;
+width: 16%;
+}
+li:active{
+    background-color: #abcafe;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+
+/* Estilos main */
+
+main {
+    width: 100%;
+    height: 82%;
+    /* background-color: rgb(93, 49, 142); */
+    display: inline-block;
+    font-size: 0rem;
+    position: relative;
+
+}
+
+#miweb {
+    width: 22%;
+    height: 50%;
+    background-color: rgba(246, 167, 40, 0.936);
+    display: inline;
+    font-size: 2rem;
+    float: left;
+    text-align: left;
+    align-content: center;
+    padding-left: 2%;
+    padding-right: 1%;
+
+}
+
+
+#miweb-img {
+    width: 25%;
+    height: 50%;
+    background-image: url("../imagenes/design.png");
+    display: inline;
+    font-size: 2rem;
+    float: left;
+
+}
+
+#blog {
+    width: 22%;
+    height: 50%;
+    background-color: rgb(255, 189, 7);
+    display: inline;
+    font-size: 2rem;
+    float: left;
+    text-align: left;
+    align-content: center;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+#blog-img {
+    width: 25%;
+    height: 50%;
+    background-image: url("../imagenes/sign.png");
+    display: inline;
+    font-size: 2rem;
+    float: left;
+
+
+}
+
+aside {
+    width: 100%;
+    height: 50%;
+    font-size: 3rem;
+}
+
+#personal {
+
+    width: 47%;
+    height: 100%;
+    background-color: darkorange;
+    float: left;
+    text-align: left;
+    align-content: center;
+
+    padding-left: 2%;
+    padding-right: 1%;
+
+
+}
+
+
+#per-img {
+    width: 50%;
+    height: 100%;
+    background-image: url("../imagenes/personal.jpg");
+    float: left;
+}
+
+/* Estilos footer */
+footer {
+    width: 100%;
+    height: 10%;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#foot {
+
+    width: 40%;
+    height: 100%;
+    padding-left: 10%;
+    align-content: center;
+
+}
+
+#copy {
+
+    height: 100%;
+    align-content: center;
+}
