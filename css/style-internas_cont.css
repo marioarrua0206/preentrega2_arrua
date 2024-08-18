@@ -4,65 +4,49 @@
     padding: 0;
 }
 
-
-
-.tit-seccion {
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    background-color: #e4eeff;
-    vertical-align: top;
-    
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.fieldset {
-    width: 150%;
-    height: 10%;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-
-
-
+.box div {
+    width: auto;
+    height: auto;
 }
 
-.legend {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.label {
-    font-size: 0.8rem;
+.destacado {
+    font-size: 1.2rem;
     font-weight: 400;
-}
-
-.btn {
-    width: 100px;
-    height: 20px;
-    font-size: 1rem;
+    width: 80%;
     color: #ffffff;
-    background-color: #4573c4;
     margin-top: 10px;
+
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #4573c4;
+    color: rgb(69, 115, 196);
     font-weight: 200;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #7b7b7b;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: #ffe4b2;
 }
 
 h3 {
     font-size: 1rem;
     color: #4573c4;
+    align-content: center;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #2e2e2e;
+    align-content: center;
 }
 
 p {
@@ -73,7 +57,7 @@ p {
 /* Estilos body */
 
 body {
-    height: 150vh;
+    height: 100vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     background-color: rgb(255, 255, 255);
@@ -84,48 +68,42 @@ body {
 
 /* Estilos header */
 header {
-    width: 100%;
-    height: 8%;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+    height: 15%;
+
 
 }
 
-div {
-    width: 25%;
-    height: 100%;
-    align-content: center;
-    float: left;
-}
+
 
 nav {
     height: 100%;
-    background-color: #ffffff;
+
 
 }
 
 nav ul {
-    width: 50%;
-    height: 100%;
-    text-align: right;
-    float: right;
-    text-align: center;
-    align-content: center;
-
-
+   
 }
 
 nav ul li {
-    display: inline-block;
+    width: 100px;
     border: 2px solid #6ea3ff;
-    width: 15%;
+    text-align: center;
     border-radius: 8px;
     background-color: #4573c4;
     font-size: 1rem;
-    padding: 4px;
-    margin: 4px;
+    padding: 4px 6px 4px 6px;
+    margin: 6px;
+    list-style-type: none;
+}
 
+li:hover {
+    background-color: #3a7ef4;
+
+}
+
+li:active {
+    background-color: #abcafe;
 
 }
 
@@ -139,55 +117,112 @@ a {
 /* Estilos main */
 
 main {
-    width: 100%;
-    height: 92%;
-    font-size: 0;
-    display: inline-block;
-    position: relative;
-    background-color: #ecf3fd;
-    
+    background-color: #acbedd;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 2fr 0.25fr;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-areas:
+        "Sect1 Sect1 Sect1 Sect1"
+        "Sect2 Sect3 Sect4 Sect5"
+        "Sect6 Sect6 Sect6 Sect6"
+    ;
 
 }
 
-
-#container {
-    height: 50%;
-    display: inline;
-    float: left;
-    padding-left: 50px;
-    
-    
+#sect1 {
+    grid-area: Sect1;
 }
 
-#img{
-    width: 50%;
-    display: inline-block;
-    float: right;
-    
-    
-    
+#sect2 {
+    grid-area: Sect2;
 }
+
+#sect3 {
+    background-color: rgb(199, 224, 247);
+    grid-area: Sect3;
+    padding: 1rem;
+}
+
+#sect4 {
+    background-color: rgb(199, 224, 247);
+    grid-area: Sect4;
+    padding: 1rem;
+
+
+}
+
+#sect5 {
+    grid-area: Sect5;
+
+}
+
+#sect6 {
+    grid-area: Sect6;
+
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {
+
+
+    main {
+        height: 120vh;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+            "Sect1 Sect1 Sect1"
+            "Sect2 Sect3 Sect5"
+            "Sect2 Sect4 Sect5"
+            "Sect6 Sect6 Sect6"
+        ;
+
+    }
+
+
+    #sect4 {
+        background-color: rgb(199, 224, 247);
+        grid-area: Sect4;
+        display: ;
+
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 120vh;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 8fr 0.5fr;
+        grid-template-areas:
+            "Sect1 Sect1 Sect1"
+            "Sect2 Sect3 Sect5"
+            "Sect2 Sect4 Sect5"
+            "Sect6 Sect6 Sect6"
+        ;
+
+    }
+
+
+    #sect4 {
+        background-color: rgb(199, 224, 247);
+        grid-area: Sect4;
+        padding: 0.5rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {}
 
 
 /* Estilos footer */
-footer {
-    width: 100%;
-    height: 10%;
-
-    background-color: rgb(255, 255, 255);
-}
-
-#foot {
-
-    width: 40%;
-    height: 100%;
-    padding-left: 10%;
-    align-content: center;
-
-}
-
-#copy {
-
-    height: 100%;
-    align-content: center;
-}

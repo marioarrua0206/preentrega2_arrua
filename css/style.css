@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 .destacado {
@@ -27,6 +28,7 @@ h2 {
 h3 {
     font-size: 1rem;
     color: #4573c4;
+    align-content: center;
 }
 
 p {
@@ -37,7 +39,8 @@ p {
 /* Estilos body */
 
 body {
-    height: 150vh;
+    width: 100%;
+    height: 100vh;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     background-color: rgb(255, 255, 255);
@@ -48,185 +51,155 @@ body {
 
 /* Estilos header */
 header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 8%;
-    position: sticky;
-    top: 0;
-    align-items: center;
-    z-index: 2;
-
-}
-
-#logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #ffffff;
-    width: 50%;
-    height: 100%;
-    align-items: center;
+    height: 10%;
     
 }
+
 
 nav {
-    width: 50%;
-    height: 100%;
-    background-color: #ffffff;
+       
 
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: space-evenly;
-    height: 100%;
-    text-align: center;
-    align-content: center;
-
-
-}
+nav ul {}
 
 nav ul li {
-    
+    width: 100px;
     border: 2px solid #6ea3ff;
-    width: 15%;
+    text-align: center;
     border-radius: 8px;
     background-color: #4573c4;
     font-size: 1rem;
-    padding: 4px;
-    margin: 4px;
+    padding: 4px 6px 4px 6px;
+    margin: 6px;
     list-style-type: none;
-   
+}
 
+li:hover {
+    background-color: #3a7ef4;
 
 }
-li:hover{
-background-color: #3a7ef4;
-width: 16%;
-}
-li:active{
+
+li:active {
     background-color: #abcafe;
-    
+
 }
+
 a {
     text-decoration: none;
     color: white;
-    padding: 2px;
+
 }
 
 
 /* Estilos main */
-
 main {
-    width: 100%;
-    height: 82%;
-    /* background-color: rgb(93, 49, 142); */
-    display: inline-block;
-    font-size: 0rem;
-    position: relative;
+    height: 80%;
+}
 
+#cuatrocol {
+
+
+    height: %
 }
 
 #miweb {
-    width: 22%;
-    height: 50%;
+    grid-area: miweb;
+
     background-color: rgba(246, 167, 40, 0.936);
-    display: inline;
-    font-size: 2rem;
-    float: left;
-    text-align: left;
-    align-content: center;
-    padding-left: 2%;
-    padding-right: 1%;
+
 
 }
 
 
 #miweb-img {
-    width: 25%;
-    height: 50%;
+    grid-area: miwebimg;
+    background-color: #ffe4b2;
     background-image: url("../imagenes/design.png");
-    display: inline;
-    font-size: 2rem;
-    float: left;
-
 }
 
 #blog {
-    width: 22%;
-    height: 50%;
+    grid-area: blog;
     background-color: rgb(255, 189, 7);
-    display: inline;
-    font-size: 2rem;
-    float: left;
-    text-align: left;
-    align-content: center;
-    padding-left: 2%;
-    padding-right: 1%;
+
 }
 
 #blog-img {
-    width: 25%;
-    height: 50%;
+    grid-area: blogimg;
+    background-color: aqua;
     background-image: url("../imagenes/sign.png");
-    display: inline;
-    font-size: 2rem;
-    float: left;
-
-
 }
 
-aside {
-    width: 100%;
-    height: 50%;
-    font-size: 3rem;
+#doscol {
+    height: 50%
 }
 
 #personal {
 
-    width: 47%;
-    height: 100%;
     background-color: darkorange;
-    float: left;
-    text-align: left;
-    align-content: center;
-
-    padding-left: 2%;
-    padding-right: 1%;
-
 
 }
 
-
 #per-img {
-    width: 50%;
-    height: 100%;
     background-image: url("../imagenes/personal.jpg");
-    float: left;
+
 }
 
 /* Estilos footer */
 footer {
-    width: 100%;
     height: 10%;
 
-    background-color: rgb(255, 255, 255);
+
+
 }
 
 #foot {
-
-    width: 40%;
     height: 100%;
-    padding-left: 10%;
-    align-content: center;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 15vh;
+    }
+
+    .destacado {
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 80%;
+        color: #ffffff;
+        margin-top: 10px;
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: rgb(69, 115, 196);
+        font-weight: 200;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: #ffe4b2;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+        color: #4573c4;
+        align-content: center;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #2e2e2e;
+    }
+
+    
 
 }
 
-#copy {
 
-    height: 100%;
-    align-content: center;
-}
+@media screen and (max-width: 480px) {}
